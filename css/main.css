@@ -1,0 +1,402 @@
+@charset "utf-8";
+/* CSS Document */
+*
+{
+	scroll-behavior: smooth;
+}
+@font-face
+{
+	font-family: fontmenu;
+	src:url("../font/PTSansNarrow-Regular.ttf");
+}
+@font-face
+{
+	font-family: fonttitle;
+	src: url("../font/Mussica.otf");
+}
+@font-face
+{
+	font-family: fontbody;
+	src: url("../font/Nesans Semi Bold.ttf");
+}
+body
+{
+	
+	padding: 0;
+	margin: 0;
+	font-family: fontmenu;
+}
+#main
+{
+	width: 100%;
+	height: auto;
+/*	background-color:antiquewhite;*/
+}
+
+
+.noidung
+{
+	height: 720px;
+/*	background-color: aqua;*/
+	font-size: 30px;
+	padding: 120px;
+	box-sizing: border-box;
+}
+.menu
+{
+    width: 70%;
+	height: 100%;
+/*	background-color: blue;*/
+	float: right;
+}
+.menu ul
+{
+	list-style: none;
+	position: absolute;
+	right:  5%;
+	top:5px;
+/*
+	padding-right: 30px;
+	box-sizing: border-box;
+*/
+}
+.menu ul li
+{
+	float: left;
+	margin-right: 90px;
+}
+.menu ul li:hover
+{
+	border-bottom: 1px solid rgba(213,213,213,1.00);
+}
+.menu ul li a
+{
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	font-weight: 500;
+	font-family: fontmenu;
+	
+}
+.menuy
+{
+	height: 100%;
+	width: 70px;
+	background-color:#111111;
+	position: fixed;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+.icon
+{
+	margin-left: 20px;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  margin-top: 10px;
+	font-family: fontmenu;
+
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+	border-bottom: 1px solid rgba(228,228,228,1.00);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*nut tron*/
+.btn {
+  border: none;
+  outline: none;
+  padding: 4px 10px;
+  background-color:rgba(129,129,129,1.00);
+  cursor: pointer;
+  font-size: 15px;
+	border-radius: 50px;
+	margin: 20px 6px  20px 0px;
+	
+}
+.btn a
+{
+	text-decoration: none;
+	color: #343434;
+	font-size: 15px;
+	font-weight: 700;
+	font-family: fontmenu;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active, .btn:hover {
+  background-color:aliceblue;
+  color: #f1f1f1;
+}
+.header
+{
+	width: 100%;
+	height: 70px;
+/*	background-color: aliceblue;*/
+/*	*/
+}
+.logo
+{
+	width: 30%;
+	height: 100%;
+	margin-top: -8%;
+/*	background-color: violet;*/
+	float: left;	
+}
+
+.logo img
+{
+	width: 40%;
+	margin-left: 5%;
+	margin-top: -1%;
+}
+#page1
+{
+	background-image: url("../images/hinh2.png");
+	background-size: cover;
+	background-position: center;
+}
+span
+{
+	color: #343434;
+}
+span:hover
+{
+	color:rgba(230,230,230,1.00);
+}
+
+/*text trang 1*/
+.nd1_content
+{
+	color: rgba(219,219,219,1.00);
+	margin-left: 30px;
+	margin-top: -4%
+}
+.nd1_content p
+{
+	letter-spacing: 8px;
+	font-size: 30px;
+	font-family: fonttitle;
+}
+.NP
+{
+	font-size: 80px;
+	margin-top: -4%;
+	letter-spacing: 2px;
+	font-family: fonttitle;
+}
+.textbody
+{
+	
+	color: rgba(218,218,218,1.00);
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-family: fontbody;
+	margin-top: 30px;
+}
+/*noidung trang 2*/
+@font-face
+{
+	font-family: fontGD;
+	src:url("../font/PTSansNarrow-Bold.ttf");
+}
+.GD
+{
+	height: 60%;
+	width: auto;
+/*	border: 1px solid rgba(255,0,4,1.00);*/
+	position: relative;
+	
+}
+.GD hr
+{
+	width: 400px;
+	height: 1px;
+	background-color: black;
+	position: absolute;
+	right: -2%;
+	top: 55%;
+	border: none;
+}
+.graphic
+{
+	font-family: fontGD;
+	font-size: 200px;
+	position: absolute;
+	right: -2%;
+	top:20%;
+	letter-spacing: 4px; 
+/*	font-weight: 700;*/
+}
+.design
+{
+	font-family: fontGD;
+	font-size: 200px;
+	position: absolute;
+	right: -2%;
+	top:85%;
+	letter-spacing: 4px;
+}
+
+.Jun
+{
+/*	border: 1px solid;*/
+	position: absolute;
+	margin-top: -5%;
+	margin-left: 2%;
+	font-family: fonttitle;
+	float: left;
+	font-size: 18px;
+	
+}
+.Jun p
+{
+	font-size: 17px;
+	letter-spacing: 1px;
+	font-family: fontbody;
+/*	font-weight: 700;*/
+}
+.Oct
+{
+/*	border: 1px solid;*/
+	position: absolute;
+	margin-top: -5%;
+	margin-left: 39%;
+	font-family: fonttitle;
+	float: left;
+	font-size: 18px;
+}
+.Sep
+{
+/*	border: 1px solid;*/
+	position: absolute;
+	margin-top: -5%;
+	font-family: fonttitle;
+	margin-left: 80%;
+	font-size: 18px;
+	text-align: right;
+	
+}
+.Sep p
+{
+	font-size: 17px;
+	letter-spacing: 1px;
+	font-family: fontbody;
+/*	font-weight: 700;*/
+}
+.textmid
+{
+	font-size: 17px;
+	letter-spacing: 1px;
+	font-family: fontbody;
+	margin-left: 3%;
+	margin-top: -6%;
+}
+.textbot
+{
+	position: absolute;
+	margin-top: 15%;
+	margin-left: 2%;
+	font-family: fonttitle;
+	float: left;
+	font-size: 18px;
+}
+.textbotright
+{
+	position: absolute;
+	margin-top: 15%;
+	margin-left: 70%;
+	font-family: fonttitle;
+	float: left;
+	font-size: 18px;
+}
+
+/*PAGE3*/
+#page3
+{
+	text-align: left;
+	background-color: #ECECEC;
+	height: 767px;
+/*	height: 720px;*/
+}
+.page3textbig
+{
+	font-family: fontGD;
+	font-size: 200px;
+	margin-top: -10%;
+	margin-left: 2%;
+	
+	
+}
+#page3 p
+{
+	font-family: fonttitle;
+	margin-top: -2%;
+	margin-left: 2%;
+}
+.page3textbody
+{
+	font-family: fontbody;
+	font-size: 17px;
+	margin-left: 2%;
+}
+.page3textright
+{
+/*	border: 1px solid;*/
+	text-align: right;
+	margin-top: 18%;
+	margin-right: -3%;
+}
+.page3textright p
+{
+	font-family: fontbody;
+	font-size: 17px;
+	
+}
+.alltopic
+{
+	font-family: fonttitle;
+}
+#page4
+{
+	text-align: center;
+	font-family: fontGD;
+	font-size: 150px;
+	margin-top: -3%;
+	background-color: #111111;
+}
