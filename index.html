@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+	
+	<div class="menuy">
+		<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">ABOUT ME</a>
+  <a href="#">GALLERY</a>
+  <a href="#">STORY</a>
+  <a href="#">CONTACT</a>
+</div>
+		
+		<span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; </span>
+<!--		nut tron-->
+		<br><br>
+		<div id="myDIV">
+  <button class="btn"><a href="#page1">B</a></button>
+  <button class="btn active"><a href="#page2">T</a></button>
+  <button class="btn"><a href="#page3">N</a></button>
+  <button class="btn"><a href="#page4">P</a></button>
+  
+</div>
+	
+	</div>
+	<div id="main">
+<!--		noi dung trang 1-->
+		<div class="noidung" id="page1">
+			<div class="header">
+			<div class="logo">
+			<img src="images/logo-01.png">
+			
+			</div>
+			<div class="menu">
+				<ul>
+					<li><a href="#">ABOUT ME</a></li>
+					<li><a href="#">GALLERY</a></li>
+					<li><a href="#">STORY</a></li>
+					<li><a href="#">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="nd1_content">
+		<p>Hi,<br>
+		My name is</p>
+		<div class="NP">NHAT PHUONG</div>
+		
+		<div class="textbody">Much of what is written here about Xi Jinping pursuing Chinese socialist vision was known since he became president in 2013.<br> <br> 
+			When China's Communist party was losing its appeal, and efforts were made to seize power within the communist party by a leader in the western province of Chongqing. Bo Xi Lai attempted to take advantage of the situation with appeals to the working class and without any genuine commitment beyond a power.<br><br>
+			<i><b>It was well known that Xi Jinping ...</i></b>
+			</div>
+		</div>
+		</div>
+		<!--		noi dung trang 2-->
+		
+		<div class="noidung" id="page2" style="background-color:#ECECEC;">
+<!--text jun 2020-->
+			
+			<div class="Jun"><b>JUN, 2020</b>
+				<p>
+				Tour Guide<br>
+				Coppy Witter<br>
+				Educational Consultant</p>
+			
+			</div>
+			<div class="Oct"><b>OCT, 2020<b></div>
+			<div class="Sep"><b>SEP, 2021<b><br>
+				<p>2D Design<br>
+				Web Design<br></p>
+				
+			</div>
+			
+			
+			
+<!--			text graphic design-->
+			<div class="GD">
+				<div class="graphic">GRAPHIC </div>
+				<div class="design">DESIGNER
+				<hr>
+				</div>
+			</div>
+			<div class="textmid">
+				Intense blazes<br>
+				Including fires in hotspots in the Mediterranean,<br> North America and Siberia, let off more than 2.7 billion<br> metric tons of carbon over the summer, with July and August<br> both breaking monthly records for emissions from fires.
+			</div>
+			
+				<div class="textbot">
+				I can do it...</div>
+				<div class="textbotright">
+				Whatever you are, be a good one.</div>
+			
+<!--		noi dung page3-->
+		
+		</div>
+		<div class="noidung" id="page3">
+		<div class="page3textbig">STORY</div>
+			<p>You must be the change you wish to see in the world.</p>
+			<div class="page3textbody">You can fool all of the people some of the time, and some of the people all of the time,<br> but you can't fool all of the people all of the time.
+			I have a dream that my four little children will <br>one day live in a nation where they will not be judged by the color of their skin but by the content of their character.</div>
+			
+			<div class="page3textright">
+			<div class="alltopic">All Topics Articles</div><br>
+			<p style="font-family: fontbody;">LyrArc brings in selected articles from many of the world's top publications.</p>
+			</div>
+		</div>
+				
+<!--				noi dung trang 4-->
+		<div class="noidung" id="page4">
+				
+				THANKS FOR WATCHING
+				
+				</div>
+	
+	
+	
+	</div>
+	<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+<!--	nut tron-->
+	<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
+</body>
+</html>
